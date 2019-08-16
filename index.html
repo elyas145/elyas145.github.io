@@ -82,7 +82,8 @@
           <div class="icons">
             <a href="#" class="icons-btn d-inline-block js-search-open"><span class="icon-search"></span></a>
             <a href="#" class="icons-btn d-inline-block"><span class="icon-heart-o"></span></a>
-            <a href="cart.html" class="icons-btn d-inline-block bag">
+            <a href="cart.html" class="icons-btn d-inline-block bag"
+              onclick="ga('send', 'event', 'Shopping', 'View Shopping cart', 'Request to view shopping cart from top menu.'); return true;">
               <span class="icon-shopping-bag"></span>
               <span class="number">2</span>
             </a>
@@ -101,7 +102,9 @@
               <h1 class="mb-2">Madewell</h1>
               <h4>Summer Collection</h4>
               <div class="price mt-3 mb-5"><strong>1,499</strong> <del>$1,999</del></div>
-              <p><a href="#" class="btn btn-outline-primary rounded-0">Shop Now</a> <a href="#" class="btn btn-primary rounded-0">Shop Now</a></p>
+              <p>
+                <a href="#" onclick="ga('send', 'event', 'Shopping', 'View Shop', 'Request to view shop'); return false;" class="btn btn-outline-primary rounded-0">Shop Now</a> 
+                <a href="#" class="btn btn-primary rounded-0">Shop Now</a></p>
             </div>  
           </div>
           <div class="col-lg-7 align-self-end text-center text-lg-right">
